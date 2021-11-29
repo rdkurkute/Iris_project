@@ -27,7 +27,7 @@ def project_predict():
 
 
     result = model.predict(np.array([SepalLengthCm,SepalWidthCm,PetalLengthCm,PetalWidthCm]).reshape(1,4))
-        
+    print('Hello Master')   
 
     return render_template('index.html',prediction = result[0])
 
